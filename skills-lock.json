@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "playbook-creator": {
+      "source": "onipinaka/how-to",
+      "sourceType": "github",
+      "skillPath": "skills/playbook-creator/SKILL.md",
+      "computedHash": "1e53773a90e7d076c7c86c71d1afc2ab51763a90828687bf8d3fb2372f16964b"
+    },
+    "prd-creator": {
+      "source": "onipinaka/how-to",
+      "sourceType": "github",
+      "skillPath": "skills/prd-creator/SKILL.md",
+      "computedHash": "268cb1aa3aca19cc017f170d52a9b0fcc0c35738643ae01e335a08fdc0c7aab5"
+    }
+  }
+}
