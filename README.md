@@ -70,6 +70,27 @@ Built-in **checkpoints** between phases to catch errors before they cascade.
 
 ---
 
+### 🗄️ DB Architect (`db-architect`)
+
+Act as a Principal Database Architect. Take any app idea or PRD and design an exhaustive, production-ready PostgreSQL database schema.
+
+Output includes:
+- Executive Summary & Design Decisions
+- Mermaid.js Entity-Relationship (ER) Diagram
+- Master SQL Schema (`CREATE TABLE` with UUIDs & Timestamps)
+- Strict Row Level Security (RLS) Policies
+- Recommended Indexes
+- Example Analytical Queries
+
+**Trigger phrases:**
+```
+"Design a database for [app idea]"
+"Create a schema for..."
+"DB schema for..."
+```
+
+---
+
 ## ⚡ Quick Installation
 
 ### Install the Entire Collection
@@ -84,6 +105,9 @@ npx skills add onipinaka/howto-skills/skills/prd-creator
 
 # Playbook Creator only
 npx skills add onipinaka/howto-skills/skills/playbook-creator
+
+# DB Architect only
+npx skills add onipinaka/howto-skills/skills/db-architect
 ```
 
 ### Manual Installation
@@ -150,15 +174,20 @@ howto-skills/
     │   └── examples/                  # Input/output examples
     │       ├── example_input.md
     │       └── example_output_preview.md
-    └── playbook-creator/
+    ├── playbook-creator/
+    │   ├── SKILL.md                   # Core skill instructions
+    │   ├── README.md                  # Skill-specific docs
+    │   ├── references/                # Templates & examples (loaded on demand)
+    │   │   ├── playbook_template.md
+    │   │   └── example_prompts.md
+    │   └── examples/                  # Input/output examples
+    │       ├── example_input.md
+    │       └── example_output_preview.md
+    └── db-architect/
         ├── SKILL.md                   # Core skill instructions
         ├── README.md                  # Skill-specific docs
-        ├── references/                # Templates & examples (loaded on demand)
-        │   ├── playbook_template.md
-        │   └── example_prompts.md
-        └── examples/                  # Input/output examples
-            ├── example_input.md
-            └── example_output_preview.md
+        └── references/                # Templates & examples (loaded on demand)
+            └── schema_template.md
 ```
 
 ---
