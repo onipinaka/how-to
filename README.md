@@ -91,6 +91,25 @@ Output includes:
 
 ---
 
+### 📊 Tracker Creator (`tracker-creator`)
+
+Convert any Playbook and PRD into a living, interactive Markdown Execution Tracker. It generates a comprehensive checklist mapping all phases and prompts with status badges, assignees, and blocker logs.
+
+Output includes:
+- Project Dashboard & Phase Summary
+- Exhaustive Checklist of EVERY prompt in the playbook
+- Status toggles (`To Do`, `In Progress`, `Done`) and Assignees
+- Blocker Log
+
+**Trigger phrases:**
+```
+"Create a tracker for this playbook"
+"Generate a project tracker"
+"Build a checklist for this PRD/Playbook"
+```
+
+---
+
 ## ⚡ Quick Installation
 
 ### Install the Entire Collection
@@ -108,6 +127,9 @@ npx skills add onipinaka/howto-skills/skills/playbook-creator
 
 # DB Architect only
 npx skills add onipinaka/howto-skills/skills/db-architect
+
+# Tracker Creator only
+npx skills add onipinaka/howto-skills/skills/tracker-creator
 ```
 
 ### Manual Installation
@@ -183,11 +205,16 @@ howto-skills/
     │   └── examples/                  # Input/output examples
     │       ├── example_input.md
     │       └── example_output_preview.md
-    └── db-architect/
+    ├── db-architect/
+    │   ├── SKILL.md                   # Core skill instructions
+    │   ├── README.md                  # Skill-specific docs
+    │   └── references/                # Templates & examples (loaded on demand)
+    │       └── schema_template.md
+    └── tracker-creator/
         ├── SKILL.md                   # Core skill instructions
         ├── README.md                  # Skill-specific docs
         └── references/                # Templates & examples (loaded on demand)
-            └── schema_template.md
+            └── tracker_template.md
 ```
 
 ---
