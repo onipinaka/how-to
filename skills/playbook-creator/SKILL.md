@@ -49,6 +49,11 @@ The playbook breaks the entire project down into **tiny, atomic, copy-paste prom
 - **Naming convention**: `PLAYBOOK_[ProductName]_v1.md` (e.g., `PLAYBOOK_MealPlannerAI_v1.md`).
 - **Never split** the playbook across multiple files. It must be one complete, sequential document.
 
+### Mandate 7: Extreme Detail in EVERY Prompt
+- **NEVER output a short, 1-sentence prompt.** 
+- EVERY prompt must be highly detailed (100-200+ words). You must explicitly list all files to create, specific UI components to import, exact state variables needed, specific error handling logic, and specific Tailwind layout classes. 
+- **DO NOT meta-comment** like "Generate similarly detailed prompts for the rest". You must actually generate the full text for EVERY prompt in the entire project.
+
 ---
 
 ## 🎯 When to Trigger
@@ -257,7 +262,7 @@ Create `components/landing/HeroSection.tsx`:
 - Background: Radial gradient glow behind the hero visual (indigo/violet, opacity 20%).
 ```
 
-Generate similarly detailed prompts for: Input, Card, Modal, Skeleton, Badge, Footer, Sidebar, Features Grid, Pricing Section, Testimonials, FAQ Accordion, and Landing Page Assembly. **Every prompt must be fully written out — never use `[Detailed prompt for...]`.**
+**CRITICAL AI INSTRUCTION**: You must actually generate the full, exhaustive text for EVERY remaining UI component prompt (Input, Card, Modal, Skeleton, Badge, Footer, Sidebar, Features Grid, Pricing Section, Testimonials, FAQ Accordion, and Landing Page Assembly). Do NOT output a summary sentence here. Write out the actual PROMPT blocks for each one with the same extreme detail as shown above.
 
 > 📎 See `references/example_prompts.md` for fully worked examples of ALL Phase 2 component prompts plus Phases 3-6.
 
@@ -346,7 +351,7 @@ Create `app/(auth)/login/page.tsx`:
 - OAuth buttons call Supabase `signInWithOAuth` with appropriate provider.
 ```
 
-Generate similarly detailed prompts for: Auth middleware, Signup page, and remaining auth flows.
+**CRITICAL AI INSTRUCTION**: Do not summarize! You must write out the actual full-length PROMPT blocks for the Auth middleware, Signup page, and any remaining auth flows. Every prompt must have exact logic, UI states, and routing rules.
 
 ---
 
@@ -366,7 +371,7 @@ Check for and fix: Supabase client errors, middleware routing, cookie handling, 
 
 ## 🔗 PHASE 4: Dashboard & Core Features
 
-Generate atomic prompts for: Dashboard layout shell, Dashboard home page, Core entity list page (with filters/pagination), Create/Edit form (with Zod validation), and Detail/View page (with delete confirmation). Each prompt must follow the same format shown in Phases 1-3 — fully written out with exact filenames, context lines, component details, and state handling.
+**CRITICAL AI INSTRUCTION**: Write out the full, exhaustive PROMPT blocks for EVERY step in Phase 4: Dashboard layout shell, Dashboard home page, Core entity list page (with filters/pagination), Create/Edit form (with Zod validation), and Detail/View page (with delete confirmation). Do not summarize this phase. Write the actual prompts! Each prompt must specify exact state variables, DB queries, loading skeletons, and error toasts.
 
 ---
 
@@ -384,7 +389,7 @@ Test full CRUD flow: List → Create → View → Edit → Delete. Fix: Supabase
 
 ## 💳 PHASE 5: Settings, Billing & Integrations
 
-Generate atomic prompts for: Settings layout with tab navigation, Profile settings page (avatar upload, form, danger zone), Security settings, Stripe checkout & webhook API routes, and Billing settings page. Same format and depth as Phases 1-3.
+**CRITICAL AI INSTRUCTION**: Write out the full, exhaustive PROMPT blocks for EVERY step in Phase 5: Settings layout with tab navigation, Profile settings page (avatar upload, form, danger zone), Security settings, Stripe checkout & webhook API routes, and Billing settings page. Do not write a summary. Write the full 100+ word prompt for each task detailing API endpoints, payloads, and UI updates.
 
 ---
 
